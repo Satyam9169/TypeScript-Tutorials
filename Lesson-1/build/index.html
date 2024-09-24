@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Typescript</title>
-</head>
-<body>
-    <h1>Hello I, learning Typescript</h1>
+  </head>
+  <body>
+    <h1>Hello I am, learning Typescript</h1>
     <ul>
-        <li>first install => npm i typescript -g</li>
-        <li>for nun the file => tsc filename.ts</li>
-        <li>for continue watching => tsc main.ts -w</li>
-        <li>for watching all files => tsc -w</li>
+      <li>first install => npm i typescript -g</li>
+      <li>for nun the file => tsc filename.ts</li>
+      <li>for continue watching => tsc main.ts -w</li>
+      <li>for watching all files => tsc -w</li>
+      <li>
+        we have to uncomment => "noEmitOnError": true, (This is to ensure us
+        that error in the code)
+      </li>
+      <li>
+        we have to uncomment => "outDir": "./build/js", (and also add build
+        directory with js file)
+      </li>
     </ul>
-    <script src="js/main.js"></script>
-</body>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main1.js"></script>
+  </body>
 </html>
