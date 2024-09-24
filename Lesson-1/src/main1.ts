@@ -13,10 +13,11 @@ console.log(guitar)
 //Array
 let fruits1: string[] = ['Apple', 'Orange', 'Banana'];
 console.log(fruits1)
+
 let fruits2: Array<string> = ['Apple', 'Orange', 'Banana'];
 console.log(fruits2)
 
-let fruits3: Array<string>
+let fruits3: Array<string>;
 fruits3 = ['Apple', 'Orange', 'Banana'];
 console.log(fruits3);
 
@@ -34,7 +35,7 @@ let test = [];
 let brands: string[] = [];
 brands.push('Van Helen');
 
-// Tuple
+// Tuple => Tuple can contain two values of different data types.
 let myTuple: [string, number, boolean] = ['satyam', 27, true];
 let mixed = ['john', 1, false];
 myTuple[1] = 42;

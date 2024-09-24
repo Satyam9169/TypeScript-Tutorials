@@ -26,7 +26,7 @@ console.log(values2);
 let test = [];
 let brands = [];
 brands.push('Van Helen');
-// Tuple
+// Tuple => Tuple can contain two values of different data types.
 let myTuple = ['satyam', 27, true];
 let mixed = ['john', 1, false];
 myTuple[1] = 42;
