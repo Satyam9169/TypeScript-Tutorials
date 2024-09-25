@@ -45,23 +45,7 @@ console.log(Add(2, 3));
 
 type mathFunction = (a: number, b: number) => number;
 let multiply: mathFunction = (c, d) => c * d;
-
 console.log(multiply(5, 6))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Array Types:
 type StringArray = string[];
@@ -138,9 +122,9 @@ const isNumber = (value: any): boolean => {
 }
 
 // user of never type
-const numberOrString = (value: number | string): string =>{
- if(typeof value === 'string') return 'string';
- if(isNumber(value)) return 'number';
-//  return createError('This should never happened')
-return "This should not happened"
+const numberOrString = (value: number | string): string => {
+    if (typeof value === 'string') return 'string';
+    if (isNumber(value)) return 'number';
+    //  return createError('This should never happened')
+    return "This should not happened"
 }
