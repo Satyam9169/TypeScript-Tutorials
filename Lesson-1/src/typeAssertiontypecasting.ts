@@ -16,7 +16,6 @@ interface Employee {
 }
 
 // Example: Type Assertion with Object
-
 let employee = <Employee>{};
 employee.name = "john"; // OK
 employee.code = 123; // OK
@@ -43,17 +42,17 @@ let a: one = 'hello';
 let b = a as two; // less specific
 let c = a as three // more specific
 
-const addOrConcat = (a: number, b: number, c: 'add' | 'concat') : number | string => {
-    if(c === 'add') return a + b;
+const addOrConcat = (a: number, b: number, c: 'add' | 'concat'): number | string => {
+    if (c === 'add') return a + b;
     return '' + a + b;
 }
 
-let myVal: string = addOrConcat(2,2, 'concat') as string;
+let myVal: string = addOrConcat(2, 2, 'concat') as string;
 console.log(myVal)
 
 
 
-let someValue:  any = "Hello, Typescript";
+let someValue: any = "Hello, Typescript";
 let strLength: number = (<string>someValue).length;
 console.log(strLength)
 
